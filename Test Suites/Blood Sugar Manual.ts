@@ -12,7 +12,26 @@
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>9c54801c-d57d-404c-be15-6c167ec3650a</testSuiteGuid>
    <testCaseLink>
-      <guid>f4af54bc-70de-40af-82ad-9ad6b14b76f3</guid>
+      <guid>39e5b3f6-636f-455b-9e8f-bb7aaaa2d6b2</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/template/login/login with email</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>24e66ae0-a790-463b-bece-0901f703243a</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>f413563f-57c8-4ad0-a764-9c2956d23597</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5f8e5fd6-6299-44b5-a03e-47b0c6623aba</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/record/create blood sugar</testCaseId>
@@ -29,5 +48,12 @@
          <value></value>
          <variableId>04621448-fa60-4bd0-a825-6dc4f97be338</variableId>
       </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>81cda3ee-f231-4a8d-bb5d-a8cbe1ff21a3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/record/check blood sugar history</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

@@ -18,14 +18,14 @@
       <variableId>f413563f-57c8-4ad0-a764-9c2956d23597</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'kentvanli@gmail.com'</defaultValue>
       <description></description>
       <id>24e66ae0-a790-463b-bece-0901f703243a</id>
       <masked>false</masked>
       <name>email</name>
    </variable>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'Admin1234'</defaultValue>
       <description></description>
       <id>f413563f-57c8-4ad0-a764-9c2956d23597</id>
       <masked>false</masked>

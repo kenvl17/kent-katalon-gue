@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>text_field_global</name>
+   <name>btn_history_gula_darah</name>
    <tag></tag>
-   <elementGuidId>349fdf46-25d5-4f99-a2ef-6d4a87719695</elementGuidId>
+   <elementGuidId>f7cbbd9a-2ec5-4c61-8afb-640ec68b27f1</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//android.widget.TextView[@text='${text}']</value>
-      <webElementGuid>30dae5eb-5755-4634-9966-952370ccef19</webElementGuid>
+      <value>//android.view.ViewGroup[@content-desc=&quot;btnBottomRekaman&quot;]</value>
+      <webElementGuid>983faada-38c0-4f54-8709-9d719c5de444</webElementGuid>
    </webElementProperties>
-   <locator>//android.widget.TextView[@text='${text}']</locator>
+   <locator>//android.view.ViewGroup[@content-desc=&quot;btnBottomRekaman&quot;]</locator>
    <locatorStrategy>ATTRIBUTES</locatorStrategy>
 </MobileElementEntity>

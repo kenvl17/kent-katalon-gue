@@ -9,26 +9,39 @@
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>8da8b3c9-4dc5-4a5c-a6e2-c1cb9a20d4be</variableId>
+      <variableId>41f01a8d-c2cf-47c4-8ff7-dad1b12600fb</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>0e20c8ff-be32-4508-9905-aaa0c02fed99</variableId>
+      <variableId>9eb383fb-49f4-4f79-848d-a5fc1d3e7bd5</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>929034ad-0d80-4749-a884-b044d30b1174</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>'kentvanlimm@mail.com'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
-      <id>8da8b3c9-4dc5-4a5c-a6e2-c1cb9a20d4be</id>
+      <id>41f01a8d-c2cf-47c4-8ff7-dad1b12600fb</id>
       <masked>false</masked>
-      <name>email</name>
+      <name>bloodsugar</name>
    </variable>
    <variable>
-      <defaultValue>'Bapakmu123'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
-      <id>0e20c8ff-be32-4508-9905-aaa0c02fed99</id>
+      <id>9eb383fb-49f4-4f79-848d-a5fc1d3e7bd5</id>
       <masked>false</masked>
-      <name>password</name>
+      <name>dinner</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>929034ad-0d80-4749-a884-b044d30b1174</id>
+      <masked>false</masked>
+      <name>snack</name>
    </variable>
 </TestCaseEntity>

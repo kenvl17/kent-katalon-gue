@@ -1,98 +1,56 @@
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
-import com.kms.katalon.core.mobile.keyword.internal.MobileAbstractKeyword as MobileAbstractKeyword
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
 
 /*
 Author:Kent Vanlim
 Created Date : 24 Mar 2023
 Update Date :-
-Notes: Create blood sugar type manual
+Notes: Create template blood sugar
 */
-Mobile.startApplication(GlobalVariable.G_AppPath, false)
-
-
-
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
-import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
-
-/*
-Author:Kent Vanlim
-Created Date : 24 Mar 2023
-Update Date :-
-Notes: Create login template with email
-*/
-Mobile.startApplication(GlobalVariable.G_AppPath, true)
 'click nav rekaman'
 Mobile.tap(findTestObject('Object Repository/record/btn_nav_record'), 10)
 
+'verify change date header'
 Mobile.verifyElementExist(findTestObject('Object Repository/record/btn_header_top_change_date'), 10, FailureHandling.STOP_ON_FAILURE)
 
-'tap masuk'
-Mobile.tap(findTestObject('Object Repository/global element/text_field_global', [('text') : 'MASUK']), 10)
+'click create nav rekaman'
+Mobile.tap(findTestObject('Object Repository/record/btn_add_record'), 10)
 
-'check if theres any button to already have account'
-def visible = Mobile.verifyElementExist(findTestObject('Object Repository/login/btn_already_have_account'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+'click type manual'
+Mobile.tap(findTestObject('Object Repository/record/btn_choose_type_record_dynamic', [('text') : 'Manual']), 10)
 
-'click already have account'
-if (visible) {
-	Mobile.tap(findTestObject('Object Repository/login/btn_already_have_account'), 10)
-}
+'check input date visible'
+Mobile.verifyElementExist(findTestObject('Object Repository/record/form input/field_input_date'), 10, FailureHandling.STOP_ON_FAILURE)
 
-'input email to field email'
-Mobile.setText(findTestObject('Object Repository/login/text_field_email'), email, 10)
+'tap type field'
+Mobile.tap(findTestObject('Object Repository/record/form input/field_input_type'), 10)
 
-'input email to field password'
-Mobile.setText(findTestObject('Object Repository/login/text_field_password'), password, 10)
+'tap type record blood sugar'
+Mobile.tap(findTestObject('Object Repository/record/form input/btn_input_type_record_dynamic', [('text') : 'Bangun Tidur']), 
+    10)
 
-'tap login'
-Mobile.tap(findTestObject('Object Repository/login/btn_submit_login'), 10)
+'tap field time'
+Mobile.tap(findTestObject('Object Repository/record/form input/field_input_time'), 10)
 
-'skip coachmark and tnc'
+'tap confirm type'
+Mobile.tap(findTestObject('Object Repository/record/form input/btn_submit_form'), 10)
 
-'check if theres any button to already have account'
-def bannerVisible = Mobile.verifyElementExist(findTestObject('Object Repository/global element/text_field_global', [('text') : 'Selamat Datang di Teman Diabetes']),
-	10, FailureHandling.CONTINUE_ON_FAILURE)
+'input blood sugar'
+Mobile.setText(findTestObject('Object Repository/record/form input/field_input_blood_sugar'), bloodsugar, 10)
 
-if (bannerVisible) {
-	Mobile.tap(findTestObject('Object Repository/login/checklist_tnc_welcome'), 10)
+'input dinner '
+Mobile.setText(findTestObject('Object Repository/record/form input/field_input_dinner'), dinner, 10)
 
-	Mobile.tap(findTestObject('Object Repository/global element/text_field_global', [('text') : 'LANJUT']), 10)
-}
+'scroll to snack section'
+Mobile.scrollToText('Apa Snack Malam anda sebelumnya')
 
-'click profile'
-Mobile.tap(findTestObject('Object Repository/profile/btn_nav_profile'), 10)
+'input snack '
+Mobile.setText(findTestObject('Object Repository/record/form input/field_input_snack'), snack, 10)
 
-'assert already login'
-Mobile.verifyElementExist(findTestObject('Object Repository/profile/text_view_email', [('text') : email]), 10)
+'click button selesai'
+Mobile.tap(findTestObject('Object Repository/record/form input/btn_finish_input_form'), 10)
+
+'click button yes reconfirm form'
+Mobile.tap(findTestObject('Object Repository/record/form input/btn_yes_reconfirm_form'), 10)

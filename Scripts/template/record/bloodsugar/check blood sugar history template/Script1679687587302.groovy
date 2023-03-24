@@ -16,12 +16,18 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-/*
- Author:Kent Vanlim
- Created Date : 24 Mar 2023
- Update Date :-
- Notes: Check blood sugar history
- */
-'call test case blood sugar'
-Mobile.callTestCase(findTestCase('Test Cases/template/record/bloodsugar/check blood sugar history template'),[:],
-	FailureHandling.STOP_ON_FAILURE)
+
+'click nav rekaman'
+Mobile.tap(findTestObject('Object Repository/record/history record/btn_history_gula_darah'), 10)
+
+'Verify Data makanan terisi'
+Mobile.verifyElementExist(findTestObject('Object Repository/record/btn_header_top_change_date', [('index') : '1', ('text') : 'Data makanan terisi']), 
+    10, FailureHandling.STOP_ON_FAILURE)
+
+'Verify type recording'
+Mobile.verifyElementExist(findTestObject('Object Repository/record/btn_header_top_change_date', [('index') : '1', ('text') : 'MANUAL']), 
+    10, FailureHandling.STOP_ON_FAILURE)
+
+'Verify edit button'
+Mobile.verifyElementExist(findTestObject('Object Repository/record/btn_header_top_change_date', [('index') : '1', ('text') : 'Edit']), 
+    10, FailureHandling.STOP_ON_FAILURE)

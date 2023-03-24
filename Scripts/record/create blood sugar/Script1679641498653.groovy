@@ -24,9 +24,8 @@ Created Date : 24 Mar 2023
 Update Date :-
 Notes: Create blood sugar type manual
 */
-Mobile.startApplication(GlobalVariable.G_AppPath, false)
 
-'call test case login'
-Mobile.callTestCase(findTestCase('Test Cases/template/login/login with email'), [('email') : email, ('password') : password], 
-    FailureHandling.STOP_ON_FAILURE)
+'call test case blood sugar'
+Mobile.callTestCase(findTestCase('Test Cases/template/record/bloodsugar/create blood sugar template'), [('bloodsugar') : '120', ('snack') : 'pisang',('dinner') : 'nasi goreng'],
+	FailureHandling.STOP_ON_FAILURE)
 

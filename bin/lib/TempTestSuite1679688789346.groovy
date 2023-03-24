@@ -29,8 +29,8 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.t
 
 
 
-RunConfiguration.setExecutionSettingFile("/Users/kentvanlim/Katalon Studio/katalon-GUE/Reports/20230325_003149/Blood Sugar Manual/20230325_003149/execution.properties")
+RunConfiguration.setExecutionSettingFile("/Users/kentvanlim/Katalon Studio/katalon-GUE/Reports/20230325_031309/Blood Sugar Manual/20230325_031309/execution.properties")
 
 TestCaseMain.beforeStart()
 
-TestCaseMain.startTestSuite('Test Suites/Blood Sugar Manual', suiteProperties, new File("/Users/kentvanlim/Katalon Studio/katalon-GUE/Reports/20230325_003149/Blood Sugar Manual/20230325_003149/testCaseBinding"))
+TestCaseMain.startTestSuite('Test Suites/Blood Sugar Manual', suiteProperties, new File("/Users/kentvanlim/Katalon Studio/katalon-GUE/Reports/20230325_031309/Blood Sugar Manual/20230325_031309/testCaseBinding"))

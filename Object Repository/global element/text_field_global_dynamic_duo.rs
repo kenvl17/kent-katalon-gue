@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>btn_history_blood_sugar</name>
+   <name>text_field_global_dynamic_duo</name>
    <tag></tag>
-   <elementGuidId>fdae5e56-6e8b-4975-a4db-464ceb83af61</elementGuidId>
+   <elementGuidId>d0b7769b-6b9f-4173-8338-c03d57b24596</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//android.view.ViewGroup[@content-desc=&quot;btnBottomRekaman&quot;]</value>
-      <webElementGuid>9120158b-2a81-4c42-8213-6a683ed7955a</webElementGuid>
+      <value>(//android.widget.TextView[@text='${text}'])[${'index'}]</value>
+      <webElementGuid>186cd966-127f-492d-bfdf-8171c005dd46</webElementGuid>
    </webElementProperties>
-   <locator>//android.view.ViewGroup[@content-desc=&quot;btnBottomRekaman&quot;]</locator>
+   <locator>(//android.widget.TextView[@text='${text}'])[${'index'}]</locator>
    <locatorStrategy>ATTRIBUTES</locatorStrategy>
 </MobileElementEntity>

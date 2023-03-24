@@ -23,16 +23,14 @@ Created Date : 24 Mar 2023
 Update Date :-
 Notes: Create login template with email
 */
-Mobile.startApplication(GlobalVariable.G_AppPath, true)
-
 'tap masuk'
 Mobile.tap(findTestObject('Object Repository/global element/text_field_global', [('text') : 'MASUK']), 10)
 
 'check if theres any button to already have account'
-def visible = Mobile.verifyElementExist(findTestObject('Object Repository/login/btn_already_have_account'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+def visible = Mobile.verifyElementNotExist(findTestObject('Object Repository/login/btn_already_have_account'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
 'click already have account'
-if (visible) {
+if (!visible) {
     Mobile.tap(findTestObject('Object Repository/login/btn_already_have_account'), 10)
 }
 
