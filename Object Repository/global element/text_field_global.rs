@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MobileElementEntity>
+   <description></description>
+   <name>text_field_global</name>
+   <tag></tag>
+   <elementGuidId>55e6f3cc-a768-40e8-bcfd-83652fd643b8</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//android.widget.TextView[@text='${text}']</value>
+      <webElementGuid>186cd966-127f-492d-bfdf-8171c005dd46</webElementGuid>
+   </webElementProperties>
+   <locator>//android.widget.TextView[@text='${text}']</locator>
+   <locatorStrategy>ATTRIBUTES</locatorStrategy>
+</MobileElementEntity>

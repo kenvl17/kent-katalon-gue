@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MobileElementEntity>
+   <description></description>
+   <name>btn_add_record</name>
+   <tag></tag>
+   <elementGuidId>10de064a-dd11-4ef4-9740-00be6f0f9aa8</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//android.view.ViewGroup[@content-desc="touchInputBGFood"]/android.widget.ImageView</value>
+      <webElementGuid>d6f601fd-87c7-4976-b2ca-295bb79d53e7</webElementGuid>
+   </webElementProperties>
+   <locator>//android.view.ViewGroup[@content-desc="touchInputBGFood"]/android.widget.ImageView</locator>
+   <locatorStrategy>ATTRIBUTES</locatorStrategy>
+</MobileElementEntity>

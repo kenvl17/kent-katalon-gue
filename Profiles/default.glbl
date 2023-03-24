@@ -16,7 +16,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'androidapp/APIDemos.apk'</initValue>
+      <initValue>'/Users/kentvanlim/Documents/temandiabetes.apk'</initValue>
       <name>G_AppPath</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

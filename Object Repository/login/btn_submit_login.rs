@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MobileElementEntity>
+   <description></description>
+   <name>btn_submit_login</name>
+   <tag></tag>
+   <elementGuidId>9fe69549-c22f-48fd-8d1a-898cfd7bf31d</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//android.view.ViewGroup[@content-desc=&quot;btnSubmit&quot;]</value>
+      <webElementGuid>1b9e71d6-e4d8-49ba-bd44-41c758342be8</webElementGuid>
+   </webElementProperties>
+   <locator>//android.view.ViewGroup[@content-desc=&quot;btnSubmit&quot;]</locator>
+   <locatorStrategy>ATTRIBUTES</locatorStrategy>
+</MobileElementEntity>

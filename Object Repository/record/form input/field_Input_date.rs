@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MobileElementEntity>
+   <description></description>
+   <name>field_input_date</name>
+   <tag></tag>
+   <elementGuidId>aa18a670-d720-4dd5-aab9-1dd52a64d02e</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//android.view.ViewGroup[@content-desc=&quot;touchInputTanggal&quot;]</value>
+      <webElementGuid>e3df9eab-0086-4c63-a7d1-725a378e4c0b</webElementGuid>
+   </webElementProperties>
+   <locator>//android.view.ViewGroup[@content-desc=&quot;touchInputTanggal&quot;]</locator>
+   <locatorStrategy>ATTRIBUTES</locatorStrategy>
+</MobileElementEntity>

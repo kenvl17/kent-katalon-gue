@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MobileElementEntity>
+   <description></description>
+   <name>btn_nav_record</name>
+   <tag></tag>
+   <elementGuidId>aa5edbb9-b3b9-4ab4-9c3d-d90285c359e6</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//android.view.ViewGroup[@content-desc=&quot;btnBottomRekaman&quot;]</value>
+      <webElementGuid>71429390-de51-48d5-9a88-0fddaaaaa986</webElementGuid>
+   </webElementProperties>
+   <locator>//android.view.ViewGroup[@content-desc=&quot;btnBottomRekaman&quot;]</locator>
+   <locatorStrategy>ATTRIBUTES</locatorStrategy>
+</MobileElementEntity>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MobileElementEntity>
+   <description></description>
+   <name>btn_yes_reconfirm_form</name>
+   <tag></tag>
+   <elementGuidId>08132380-94d9-4bb8-874d-00fa31a17766</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//android.view.ViewGroup[@content-desc=&quot;touchSendData&quot;]</value>
+      <webElementGuid>41dda339-fb40-4973-a5d4-af000c8339ef</webElementGuid>
+   </webElementProperties>
+   <locator>//android.view.ViewGroup[@content-desc=&quot;touchSendData&quot;]</locator>
+   <locatorStrategy>ATTRIBUTES</locatorStrategy>
+</MobileElementEntity>

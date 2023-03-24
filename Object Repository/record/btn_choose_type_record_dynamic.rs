@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MobileElementEntity>
+   <description></description>
+   <name>btn_choose_type_record_dynamic</name>
+   <tag></tag>
+   <elementGuidId>6b85c774-97d8-4df3-95d1-6b18bed6a138</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//android.widget.TextView[@text='${text}']</value>
+      <webElementGuid>b3d8dbbf-73b5-4521-84e4-ce85d5695d27</webElementGuid>
+   </webElementProperties>
+   <locator>//android.widget.TextView[@text='${text}']</locator>
+   <locatorStrategy>ATTRIBUTES</locatorStrategy>
+</MobileElementEntity>

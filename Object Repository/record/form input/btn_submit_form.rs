@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MobileElementEntity>
+   <description></description>
+   <name>btn_submit_form</name>
+   <tag></tag>
+   <elementGuidId>af84c1ef-4428-4c0e-9542-a3f7f72dfdab</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//android.view.ViewGroup[@content-desc=&quot;btn-confirm&quot;]</value>
+      <webElementGuid>ae7fa611-afeb-4da2-b85f-fd00d70a9696</webElementGuid>
+   </webElementProperties>
+   <locator>//android.view.ViewGroup[@content-desc=&quot;btn-confirm&quot;]</locator>
+   <locatorStrategy>ATTRIBUTES</locatorStrategy>
+</MobileElementEntity>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MobileElementEntity>
+   <description></description>
+   <name>field_input_dinner</name>
+   <tag></tag>
+   <elementGuidId>b2e7eec0-03a5-4012-b6a8-9b55d1bd18ab</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//android.widget.EditText[@content-desc=&quot;inputFood1&quot;]</value>
+      <webElementGuid>262fb8af-99e7-4e82-bc40-ad210c6ac531</webElementGuid>
+   </webElementProperties>
+   <locator>//android.widget.EditText[@content-desc=&quot;inputFood1&quot;]</locator>
+   <locatorStrategy>ATTRIBUTES</locatorStrategy>
+</MobileElementEntity>
